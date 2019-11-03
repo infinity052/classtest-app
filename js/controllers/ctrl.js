@@ -20,8 +20,13 @@ function bindEvents(){
     document.querySelector('#sort').addEventListener('click',showHideSort);
     document.querySelector('#actualSort').addEventListener('click',sort);
     document.querySelector('#clearall').addEventListener('click',clearAll);
-    document.querySelector('#savetoserver').addEventListener('click',saveToServer);
+    
     document.querySelector('#clearstorage').addEventListener('click',clearStorage);
+    if(firebase){
+    document.querySelector('#savetoserver').addEventListener('click',saveToServer);}
+    else
+    {
+        alert("This application needs firebase to save the questions to the server. Please provide your firebase config");}
 
 }
 function clearStorage(){
