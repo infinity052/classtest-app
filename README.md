@@ -1,0 +1,2 @@
+# classtest-app
+This is a basic JavaScript application containing 2 portals for a teacher to create a test by adding questions dynamically and without reloading the page and then uploading them to the server (Firebase). And then a test portal for a student to take the test and check the score at the end. You need to provide your firebase config to run this application. No input validation has been used in this project as it was only a practice application for the purpose of learning important javascript aspects like AJAX, Objects, DOM etc.
