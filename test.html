@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/design.css">
+    
+    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+    <script src="js/controllers/firebaseconfig.js"></script>
+    <script src="utils/utils.js"></script>
+    <script src="js/models/serveroperations.js"></script>
+    
+    <script src="js/controllers/studentctrl.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="alert-success container questionBox"><label for="" id="header" class="form-group container studentText">
+        Test
+        <br>
+
+    </label></div>
+    <br>
+    <div id="break" class="hide"><br>
+        <span id="countdown">60 seconds left</span>
+        <br><br>
+    </div>
+    <div class="alert-primary container " id="questionback"><label for="" class="form-group container studentQuestion  " id="content">
+        This test contains <span id="quescount"></span> questions, each contains different scores. <br>
+        Every incorrect answer contains a negetive mark. The total time for each question is 1 minute and 
+        the whole test contains a time limit of <span id="totaltime"></span>. <br>
+        Please attempt all the questions fairly and honestly.
+    </label></div>
+    <br>
+   
+    <div class="container padding hide" id="options">
+        <input type="radio" name="rightanswer" id="rans1" value="Option A"><span id="r1"></span><br><br>
+        <input type="radio" name="rightanswer" id="rans2" value="Option B"><span id="r2"></span><br><br>
+        <input type="radio" name="rightanswer" id="rans3" value="Option C"><span id="r3"></span><br><br>
+        <input type="radio" name="rightanswer" id="rans4" value="Option D"><span id="r4"></span><br><br>
+    </div>
+    <div class="container"><button class="btn btn-success" id="starttest">Start Test</button>
+    <button class="hide" id="nextbtn">Next</button> </div>
+    </div>
+    <script src="js/models/studentmodel.js"></script>
+</body>
+</html>
